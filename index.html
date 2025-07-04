@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>百家乐预测系统 2025</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="data.js"></script>
+  <script defer src="utils.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div id="app">
+    <h1>🎲 百家乐智能预测系统（正式版）</h1>
+    <div class="controls">
+      <label>局结果输入（点击快速录入）：</label>
+      <div class="buttons">
+        <button onclick="addResult('B')">庄</button>
+        <button onclick="addResult('P')">闲</button>
+        <button onclick="addResult('T')">和</button>
+        <button onclick="reset()">重置</button>
+      </div>
+      <textarea id="inputSequence" readonly></textarea>
+      <button onclick="generate()">生成预测</button>
+    </div>
+
+    <div id="prediction-panel" class="panel">
+      <h2>🔮 预测建议</h2>
+      <div id="prediction-content">请先输入局结果</div>
+    </div>
+
+    <div id="roadmap-panel" class="panel">
+      <h2>📊 路单图形（大路+下三路）</h2>
+      <div id="roadmap-content">待实现路图绘制...</div>
+    </div>
+  </div>
+</body>
+</html>
